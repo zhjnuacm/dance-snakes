@@ -1,0 +1,17 @@
+﻿Build started 4/6/2013 10:46:30 AM.
+     1>Project "F:\cocos2d-2.1rc0-x-2.1.2\CocosDenshion\proj.win32\CocosDenshion.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         H:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /I..\Include /I"F:\cocos2d-2.1rc0-x-2.1.2\CocosDenshion\proj.win32\..\..\cocos2dx" /I"F:\cocos2d-2.1rc0-x-2.1.2\CocosDenshion\proj.win32\..\..\cocos2dx\include" /I"F:\cocos2d-2.1rc0-x-2.1.2\CocosDenshion\proj.win32\..\..\cocos2dx\kazmath\include" /I"F:\cocos2d-2.1rc0-x-2.1.2\CocosDenshion\proj.win32\..\..\cocos2dx\platform\win32" /I"F:\cocos2d-2.1rc0-x-2.1.2\CocosDenshion\proj.win32\..\..\cocos2dx\platform\third_party\win32\OGLES" /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D COCOSDENSHIONWIN32_EXPORTS /D _EXPORT_DLL_ /D _WINDLL /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release.win32\\" /Fd"Release.win32\vc110.pdb" /Gd /TP /wd4251 /analyze- /errorReport:prompt ..\win32\MciPlayer.cpp ..\win32\SimpleAudioEngine.cpp
+         MciPlayer.cpp
+         SimpleAudioEngine.cpp
+         Generating Code...
+       Link:
+         H:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\cocos2d-2.1rc0-x-2.1.2\Release.win32\libCocosDenshion.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:"F:\cocos2d-2.1rc0-x-2.1.2\Release.win32\\" winmm.lib libcocos2d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\cocos2d-2.1rc0-x-2.1.2\Release.win32\libCocosDenshion.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\cocos2d-2.1rc0-x-2.1.2\Release.win32\libCocosDenshion.lib" /MACHINE:X86 /SAFESEH /DLL Release.win32\MciPlayer.obj
+         Release.win32\SimpleAudioEngine.obj
+            Creating library F:\cocos2d-2.1rc0-x-2.1.2\Release.win32\libCocosDenshion.lib and object F:\cocos2d-2.1rc0-x-2.1.2\Release.win32\libCocosDenshion.exp
+         CocosDenshion.vcxproj -> F:\cocos2d-2.1rc0-x-2.1.2\Release.win32\libCocosDenshion.dll
+     1>Done Building Project "F:\cocos2d-2.1rc0-x-2.1.2\CocosDenshion\proj.win32\CocosDenshion.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.93
