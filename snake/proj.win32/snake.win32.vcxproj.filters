@@ -24,6 +24,48 @@
     <Image Include="..\Resources\CloseNormal.png">
       <Filter>resource</Filter>
     </Image>
+    <Image Include="..\Resources\about.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\about_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\exit.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\exit_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\load.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\load_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\menubg.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\options.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\options_.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\pausemenuresume.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\pausemenureturn.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\pausemenusave.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\start.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\start_.png">
+      <Filter>resource</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="snake.rc">
@@ -52,9 +94,6 @@
     <ClInclude Include="..\Classes\snakes\SnakeNode.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\snakes\Snake.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\snakes\config.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -65,6 +104,21 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\snakes\FoodFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="StartMenu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\snakes\Point.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\snakes\SnakeBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\snakes\Snake.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\snakes\MarsSnake.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -87,13 +141,25 @@
     <ClCompile Include="..\Classes\snakes\SnakeNode.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\snakes\Snake.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\snakes\Food.cpp">
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\snakes\FoodFactory.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="StartMenu.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\snakes\SnakeBase.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\snakes\Point.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\snakes\MarsSnake.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\snakes\Snake.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

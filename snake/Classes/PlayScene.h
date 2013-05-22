@@ -15,9 +15,14 @@ public:
     void menuCloseCallback(CCObject* pSender);
 	void snakeMove(float dt);
 	void mainLoop(float dt);
+	void showTime(float dt);
+	void showScore(float dt);
+
+	void gameOverMenu();
+	void mainMenu(CCObject* pSender);
     CREATE_FUNC(PlayScene);
 private:
-	
+
 };
 
 #endif  // 

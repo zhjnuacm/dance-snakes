@@ -9,7 +9,7 @@ class Map
 {
 
 private:
-	CCTMXTiledMap * tmxMap;
+	CCTMXTiledMap * tmxMap; // 15 * 25
 
 public:
 	static Map * create(char *path);
@@ -21,7 +21,7 @@ public:
 	int getTiedType(CCPoint p);
 	bool isEmpty(CCPoint p);
 	CCSprite * getTiledAt(CCPoint p);
-	bool isPointInner(CCPoint p );
+	bool isPointInner(CCPoint p ) const;
 
 	bool isCanPutFood(CCPoint p);
 	static CCPoint convertCoordGLToTile(CCPoint p);

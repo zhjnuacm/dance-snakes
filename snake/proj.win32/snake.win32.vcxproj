@@ -118,8 +118,22 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Image Include="..\Resources\about.png" />
+    <Image Include="..\Resources\about_.png" />
     <Image Include="..\Resources\CloseNormal.png" />
     <Image Include="..\Resources\CloseSelected.png" />
+    <Image Include="..\Resources\exit.png" />
+    <Image Include="..\Resources\exit_.png" />
+    <Image Include="..\Resources\load.png" />
+    <Image Include="..\Resources\load_.png" />
+    <Image Include="..\Resources\menubg.png" />
+    <Image Include="..\Resources\options.png" />
+    <Image Include="..\Resources\options_.png" />
+    <Image Include="..\Resources\pausemenuresume.png" />
+    <Image Include="..\Resources\pausemenureturn.png" />
+    <Image Include="..\Resources\pausemenusave.png" />
+    <Image Include="..\Resources\start.png" />
+    <Image Include="..\Resources\start_.png" />
     <Image Include="res\snake.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -134,10 +148,14 @@
     <ClInclude Include="..\Classes\snakes\Food.h" />
     <ClInclude Include="..\Classes\snakes\FoodFactory.h" />
     <ClInclude Include="..\Classes\snakes\Map.h" />
+    <ClInclude Include="..\Classes\snakes\MarsSnake.h" />
+    <ClInclude Include="..\Classes\snakes\Point.h" />
     <ClInclude Include="..\Classes\snakes\Snake.h" />
+    <ClInclude Include="..\Classes\snakes\SnakeBase.h" />
     <ClInclude Include="..\Classes\snakes\SnakeNode.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="StartMenu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
@@ -146,9 +164,13 @@
     <ClCompile Include="..\Classes\snakes\Food.cpp" />
     <ClCompile Include="..\Classes\snakes\FoodFactory.cpp" />
     <ClCompile Include="..\Classes\snakes\Map.cpp" />
+    <ClCompile Include="..\Classes\snakes\MarsSnake.cpp" />
+    <ClCompile Include="..\Classes\snakes\Point.cpp" />
     <ClCompile Include="..\Classes\snakes\Snake.cpp" />
+    <ClCompile Include="..\Classes\snakes\SnakeBase.cpp" />
     <ClCompile Include="..\Classes\snakes\SnakeNode.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="StartMenu.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
