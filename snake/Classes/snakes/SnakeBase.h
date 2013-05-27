@@ -17,8 +17,11 @@ protected:
 	int score;
 	DIR direction;
 	int len;
-
+	
+	int moveSteps;
 public:
+	int getMoveSteps() {return this->moveSteps;}
+	void setMoveSteps(int step){this->moveSteps = step;}
 
 	SnakeBase(): score(0) {}
 	static SnakeBase * create();
@@ -34,21 +37,21 @@ public:
 	std::string getScoreString();
 
 	void setScore(int score);
-	
+
 	int getLen();
 
 	//判斷是否自連
 	bool isSelfCollision(const CCPoint) const;
 
 	bool isCollision(const CCPoint) const;
-	
+
 	SnakeNode** getSnakeNodeList();
-	
+
 	bool init();
 
 	//吃到食物，在尾部添加節點
 	SnakeNode * addTail();
-	
+
 	SnakeNode *getHead();
 
 	const CCPoint getNextLocation();

@@ -10,9 +10,10 @@ private:
 	int type;
 	int value;
 	CCSprite * sprite;
-
+	CCParticleSystemQuad *effect;
 public:
-
+	CCParticleSystemQuad *getEffect(){return this->effect;}
+	void setEffect(CCParticleSystemQuad * e){this->effect = e;}
 	static Food * create(CCPoint );
 
 	int getType();
@@ -31,7 +32,7 @@ public:
 
 	void setSprite(CCSprite * sprite)		{this->sprite = sprite;}
 	CCSprite * getSprite()					{return this->sprite;}
-
+	~Food();
 };
 
 #endif

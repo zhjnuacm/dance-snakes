@@ -8,8 +8,19 @@ Food * Food::create(CCPoint p)
 	Food * ret = new Food();
 	ret->setSprite(CCSprite::create("maps/tmw_desert_spacing.png",CCRectMake(32*6+8,32*3+4,31,31)));
 	ret->getSprite()->setPosition(Map::tiledPositionToCoordGL(p));
+	//ret->getSprite()->retain();
+
+	//ret->setEffect(CCParticleSun::create());
+	
+	//CCTexture2D * myTexture =  CCTextureCache::sharedTextureCache()->addImage("img/fire.png"); 
+	//ret->getEffect()->setTexture(myTexture);
+	//ret->getEffect()->setPosition(Map::tiledPositionToCoordGL(p));
+	//ret->getEffect()->setScale(0.3);
+	
+
 	if(ret && ret->getSprite() && ret->init())
 		return ret;
+
 	return NULL;
 }
 
@@ -41,5 +52,14 @@ bool Food::init() {
 	
 	setType(1);
 	setValue(this->type * FOODUNITVALUE);
+
 	return true;
+}
+
+
+Food::~Food()
+{
+	delete this->effect;
+	delete this->sprite;
+	
 }

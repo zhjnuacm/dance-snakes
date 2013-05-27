@@ -9,6 +9,8 @@
 #include "snakes\Food.h"
 #include "snakes\DIR.h"
 #include "cocos2d.h"
+#include "snakes\ScoreAndTimePanel.h"
+
 #include <string>
 #if(CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)   
 #include <windows.h>
@@ -30,7 +32,7 @@ private:
 	Food *food;
 	
 	bool isGameOver;
-	
+	bool isNextLvl;
 	static Mediator *mdInstance;
 
 	CCLayer *gameScene;
@@ -39,6 +41,7 @@ private:
 
 	virtual ~Mediator();
 
+	ScoreAndTimePanel * scoreAndTimePanel;
 public:
 
 	//获取实例
@@ -57,7 +60,7 @@ public:
 
 	//判斷遊戲是否結束
 	bool end();
-	
+	bool next();
 	//食物工廠產生食物
 	void putNewFood();
 
@@ -70,7 +73,6 @@ public:
 	bool gameOver();
 	void snakeMove(float dt);
 	void marsSnakeMove(float dt);
-	std::string toString();
 	void snakeEatFood();
 
 	//char *

@@ -8,11 +8,13 @@ using namespace cocos2d;
 SnakeNode * SnakeNode::create(bool isHead)
 {
 	SnakeNode * ret = new SnakeNode();
-	if(isHead)
-		ret->sprite = CCSprite::create("maps/tmw_desert_spacing.png",CCRectMake(32*7+8,32*4+6,30,30));
-	else
-		ret->sprite = CCSprite::create("maps/tmw_desert_spacing.png",CCRectMake(32*7+8,32*3+4,31,31));
-	
+	if(isHead){
+		ret->sprite = CCSprite::create("img/shead.png",CCRectMake(0,0,32,32));
+
+	}
+	else{
+		ret->sprite = CCSprite::create("img/sbody.png",CCRectMake(0,0,32,32));
+	}
 	if(ret && ret->init())
 		return ret;
 	return NULL;
@@ -24,11 +26,12 @@ SnakeNode * SnakeNode::create(bool isHead)
 SnakeNode * SnakeNode::marsCreate(bool isHead)
 {
 	SnakeNode * ret = new SnakeNode();
-	if(isHead)
-		ret->sprite = CCSprite::create("maps/tmw_desert_spacing.png",CCRectMake(32*7+8,32*4+6,30,30));
+	if(isHead){
+		ret->sprite = CCSprite::create("img/shead2.png",CCRectMake(0,0,32,32));
+	}
 	else
-		ret->sprite = CCSprite::create("maps/tmw_desert_spacing.png",CCRectMake(32*7+8,32*5+6,30,30));
-	
+		ret->sprite = CCSprite::create("img/sbody2.png",CCRectMake(0,0,32,32));
+	//ret->getSprite()->setColor(ccc3(12,12,12));
 	if(ret && ret->init())
 		return ret;
 	return NULL;
@@ -51,8 +54,7 @@ SnakeNode * SnakeNode::create(CCPoint p, bool isHead)
 SnakeNode * SnakeNode::marsCreate(CCPoint p, bool isHead)
 {
 	SnakeNode * ret = SnakeNode::marsCreate(isHead);
-	if(ret)
-	{
+	if(ret){
 		ret->getSprite()->setPosition(Map::tiledPositionToCoordGL(p));
 		return ret;
 	}
@@ -61,6 +63,7 @@ SnakeNode * SnakeNode::marsCreate(CCPoint p, bool isHead)
 
 void SnakeNode::move(CCPoint pp) {
 	this->getSprite()->setPosition(Map::tiledPositionToCoordGL(pp));
+
 }
 
 CCPoint SnakeNode::getLocation() {

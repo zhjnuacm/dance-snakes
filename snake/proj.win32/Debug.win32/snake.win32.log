@@ -1,25 +1,11 @@
-﻿Build started 5/22/2013 1:37:08 PM.
-     1>Project "E:\GitHub\snake\snake\proj.win32\snake.win32.vcxproj" on node 2 (Build target(s)).
+﻿Build started 5/25/2013 12:32:46 AM.
+     1>Project "F:\snake\snake\proj.win32\snake.win32.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I..\Classes /IE:\GitHub\snake\cocos2dx /IE:\GitHub\snake\cocos2dx\include /IE:\GitHub\snake\cocos2dx\kazmath\include /IE:\GitHub\snake\cocos2dx\platform\win32 /IE:\GitHub\snake\cocos2dx\platform\third_party\win32 /IE:\GitHub\snake\cocos2dx\platform\third_party\win32\OGLES /IE:\GitHub\snake\CocosDenshion\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AppDelegate.cpp ..\Classes\Mediator.cpp ..\Classes\PlayScene.cpp ..\Classes\snakes\Food.cpp ..\Classes\snakes\FoodFactory.cpp ..\Classes\snakes\Map.cpp ..\Classes\snakes\MarsSnake.cpp ..\Classes\snakes\Point.cpp ..\Classes\snakes\Snake.cpp ..\Classes\snakes\SnakeBase.cpp ..\Classes\snakes\SnakeNode.cpp main.cpp StartMenu.cpp
-         StartMenu.cpp
+         H:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I..\Classes /IF:\snake\cocos2dx /IF:\snake\cocos2dx\include /IF:\snake\cocos2dx\kazmath\include /IF:\snake\cocos2dx\platform\win32 /IF:\snake\cocos2dx\platform\third_party\win32 /IF:\snake\cocos2dx\platform\third_party\win32\OGLES /IF:\snake\CocosDenshion\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS_DEBUG /D COCOS2D_DEBUG=1 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt main.cpp
          main.cpp
-         SnakeNode.cpp
-         SnakeBase.cpp
-         Snake.cpp
-         Point.cpp
-         MarsSnake.cpp
-         Map.cpp
-         FoodFactory.cpp
-         Food.cpp
-         PlayScene.cpp
-         Mediator.cpp
-         AppDelegate.cpp
-         Generating Code...
-       ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /l"0x0409" /IDebug.win32\ /nologo /fo"Debug.win32\snake.res" snake.rc 
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\GitHub\snake\Debug.win32\snake.win32.exe" /INCREMENTAL /NOLOGO /LIBPATH:E:\GitHub\snake\Debug.win32\ libcocos2d.lib opengl32.lib glew32.lib libCocosDenshion.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\GitHub\snake\Debug.win32\snake.win32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\GitHub\snake\Debug.win32\snake.win32.lib" /MACHINE:X86 Debug.win32\snake.res
+         H:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\snake\Debug.win32\snake.win32.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\snake\Debug.win32\ libcocos2d.lib opengl32.lib glew32.lib libCocosDenshion.lib libiconv.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\snake\Debug.win32\snake.win32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\snake\Debug.win32\snake.win32.lib" /MACHINE:X86 Debug.win32\snake.res
+         Debug.win32\AllPassScene.obj
          Debug.win32\AppDelegate.obj
          Debug.win32\Mediator.obj
          Debug.win32\PlayScene.obj
@@ -28,14 +14,16 @@
          Debug.win32\Map.obj
          Debug.win32\MarsSnake.obj
          Debug.win32\Point.obj
+         Debug.win32\ScoreAndTimePanel.obj
          Debug.win32\Snake.obj
          Debug.win32\SnakeBase.obj
          Debug.win32\SnakeNode.obj
-         Debug.win32\main.obj
          Debug.win32\StartMenu.obj
-         snake.win32.vcxproj -> E:\GitHub\snake\Debug.win32\snake.win32.exe
-     1>Done Building Project "E:\GitHub\snake\snake\proj.win32\snake.win32.vcxproj" (Build target(s)).
+         Debug.win32\Tools.obj
+         Debug.win32\main.obj
+         snake.win32.vcxproj -> F:\snake\Debug.win32\snake.win32.exe
+     1>Done Building Project "F:\snake\snake\proj.win32\snake.win32.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:30.48
+Time Elapsed 00:00:02.64

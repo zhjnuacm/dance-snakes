@@ -2,7 +2,8 @@
 #define __HELLOWORLD_SCENE_H__
 #include "Mediator.h"
 #include "cocos2d.h"
-
+#include <vector>
+#include <string>
 #include "SimpleAudioEngine.h"
 
 class PlayScene : public cocos2d::CCLayer
@@ -12,17 +13,29 @@ public:
 
     static cocos2d::CCScene* scene();
     
-    void menuCloseCallback(CCObject* pSender);
+    
 	void snakeMove(float dt);
 	void mainLoop(float dt);
-	void showTime(float dt);
 	void showScore(float dt);
 
-	void gameOverMenu();
-	void mainMenu(CCObject* pSender);
+	
+	void mainMenuCallBack(CCObject* pSender);
+	void resumeGameCallBack(CCObject* pSender);
+	void menuPauseCallback(CCObject* pSender);
+	void saveGameCallback(CCObject* pSender);
+	void exitGameCallback(CCObject* pSender);
+	void restartGameCallBack(CCObject* pSender);
+	void nextGameCallBack(CCObject* pSender); 
+
+	void addPauseButton();
+	
+	CCLayer *genMenus(std::vector<std::string> menuItems , std::vector<cocos2d::SEL_MenuHandler> handlers ,std::string msg);
+	void initMenus();
     CREATE_FUNC(PlayScene);
 private:
-
+	CCLayer * gamePauseMenu;
+	CCLayer * gameOverMenu;
+	CCLayer * gameNextMenu;
 };
 
 #endif  // 

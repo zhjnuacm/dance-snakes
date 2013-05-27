@@ -1,0 +1,62 @@
+﻿Build started 5/25/2013 12:57:04 AM.
+     1>Project "F:\snake\snake\proj.win32\snake.win32.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         H:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I. /I..\Classes /IF:\snake\cocos2dx /IF:\snake\cocos2dx\include /IF:\snake\cocos2dx\kazmath\include /IF:\snake\cocos2dx\platform\win32 /IF:\snake\cocos2dx\platform\third_party\win32 /IF:\snake\cocos2dx\platform\third_party\win32\OGLES /IF:\snake\CocosDenshion\include /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D _WINDOWS /D STRICT /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGSNDEBUG /D _UNICODE /D UNICODE /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release.win32\\" /Fd"Release.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\AllPassScene.cpp ..\Classes\AppDelegate.cpp ..\Classes\Mediator.cpp ..\Classes\PlayScene.cpp ..\Classes\snakes\Food.cpp ..\Classes\snakes\FoodFactory.cpp ..\Classes\snakes\Map.cpp ..\Classes\snakes\MarsSnake.cpp ..\Classes\snakes\Point.cpp ..\Classes\snakes\ScoreAndTimePanel.cpp ..\Classes\snakes\Snake.cpp ..\Classes\snakes\SnakeBase.cpp ..\Classes\snakes\SnakeNode.cpp ..\Classes\StartMenu.cpp ..\Classes\Tools.cpp main.cpp
+         AllPassScene.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         AppDelegate.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         Mediator.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         PlayScene.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         Food.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         FoodFactory.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         Map.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         MarsSnake.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         Point.cpp
+         ScoreAndTimePanel.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         Snake.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         SnakeBase.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         SnakeNode.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         StartMenu.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         Tools.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         main.cpp
+     1>H:\Program Files\Microsoft Visual Studio 11.0\VC\include\xlocale(336): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /l"0x0409" /IRelease.win32\ /nologo /fo"Release.win32\snake.res" snake.rc 
+       Link:
+         H:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\snake\Release.win32\snake.win32.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:F:\snake\Release.win32\ libcocos2d.lib opengl32.lib glew32.lib libCocosDenshion.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"F:\snake\Release.win32\snake.win32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\snake\Release.win32\snake.win32.lib" /MACHINE:X86 /SAFESEH Release.win32\snake.res
+         Release.win32\AllPassScene.obj
+         Release.win32\AppDelegate.obj
+         Release.win32\Mediator.obj
+         Release.win32\PlayScene.obj
+         Release.win32\Food.obj
+         Release.win32\FoodFactory.obj
+         Release.win32\Map.obj
+         Release.win32\MarsSnake.obj
+         Release.win32\Point.obj
+         Release.win32\ScoreAndTimePanel.obj
+         Release.win32\Snake.obj
+         Release.win32\SnakeBase.obj
+         Release.win32\SnakeNode.obj
+         Release.win32\StartMenu.obj
+         Release.win32\Tools.obj
+         Release.win32\main.obj
+     1>LINK : fatal error LNK1181: cannot open input file 'libcocos2d.lib'
+     1>Done Building Project "F:\snake\snake\proj.win32\snake.win32.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:31.84

@@ -19,6 +19,8 @@ void SnakeBase::move() {
 	for(int i = len - 1; i > 0; --i)
 	{
 		snakeNodeList[i]->move(snakeNodeList[i - 1]->getLocation());
+		if( i > len-4)
+			snakeNodeList[i]->getSprite()->setScale((6-i+len)*0.1);
 	}
 	CCPoint pp =  snakeNodeList[0]->getLocation();
 	DIR dir = this->getDirection();
@@ -29,6 +31,9 @@ void SnakeBase::move() {
 		case LEFT: snakeNodeList[0]->move(ccp(pp.x - 1, pp.y)); break;
 		case RIGHT: snakeNodeList[0]->move(ccp(pp.x + 1, pp.y)); break;
 	}
+	//this->getEffect()->setPosition(snakeNodeList[0]->getSprite()->getPosition());
+	//this->getEffect()->runAction(CCMoveTo::create(0.048f,snakeNodeList[0]->getSprite()->getPosition()));
+	//this->setMoveSteps(this->getMoveSteps() + 1);
 }
 
 DIR SnakeBase::getDirection() {
@@ -36,7 +41,8 @@ DIR SnakeBase::getDirection() {
 }
 
 void SnakeBase::setDirection(DIR dir) {
-
+	CCFiniteTimeAction * disap = CCRotateTo::create(0.05f,-90*dir,-90*dir);
+	this->getHead()->getSprite()->runAction((CCSequence::create(disap,NULL)));
 	this->direction = dir;
 }
 

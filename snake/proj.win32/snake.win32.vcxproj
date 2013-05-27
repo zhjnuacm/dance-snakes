@@ -40,6 +40,7 @@
     <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
     <IntDir>$(Configuration).win32\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>F:\snake\cocos2dx\platform\third_party\win32\libraries;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)$(Configuration).win32\</OutDir>
@@ -64,7 +65,7 @@
       <TargetMachine>MachineX86</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libCocosDenshion.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcocos2d.lib;opengl32.lib;glew32.lib;libCocosDenshion.lib;libiconv.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <Culture>0x0409</Culture>
@@ -140,6 +141,7 @@
     <ResourceCompile Include="snake.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Classes\AllPassScene.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\Mediator.h" />
     <ClInclude Include="..\Classes\PlayScene.h" />
@@ -150,14 +152,16 @@
     <ClInclude Include="..\Classes\snakes\Map.h" />
     <ClInclude Include="..\Classes\snakes\MarsSnake.h" />
     <ClInclude Include="..\Classes\snakes\Point.h" />
+    <ClInclude Include="..\Classes\snakes\ScoreAndTimePanel.h" />
     <ClInclude Include="..\Classes\snakes\Snake.h" />
     <ClInclude Include="..\Classes\snakes\SnakeBase.h" />
     <ClInclude Include="..\Classes\snakes\SnakeNode.h" />
+    <ClInclude Include="..\Classes\Tools.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="StartMenu.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Classes\AllPassScene.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\Mediator.cpp" />
     <ClCompile Include="..\Classes\PlayScene.cpp" />
@@ -166,11 +170,13 @@
     <ClCompile Include="..\Classes\snakes\Map.cpp" />
     <ClCompile Include="..\Classes\snakes\MarsSnake.cpp" />
     <ClCompile Include="..\Classes\snakes\Point.cpp" />
+    <ClCompile Include="..\Classes\snakes\ScoreAndTimePanel.cpp" />
     <ClCompile Include="..\Classes\snakes\Snake.cpp" />
     <ClCompile Include="..\Classes\snakes\SnakeBase.cpp" />
     <ClCompile Include="..\Classes\snakes\SnakeNode.cpp" />
+    <ClCompile Include="..\Classes\StartMenu.cpp" />
+    <ClCompile Include="..\Classes\Tools.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="StartMenu.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

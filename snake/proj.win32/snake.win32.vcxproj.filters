@@ -106,9 +106,6 @@
     <ClInclude Include="..\Classes\snakes\FoodFactory.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="StartMenu.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\snakes\Point.h">
       <Filter>include</Filter>
     </ClInclude>
@@ -119,6 +116,15 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\snakes\MarsSnake.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\snakes\ScoreAndTimePanel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Tools.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AllPassScene.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -147,19 +153,28 @@
     <ClCompile Include="..\Classes\snakes\FoodFactory.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="StartMenu.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\snakes\SnakeBase.cpp">
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\snakes\Point.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\snakes\Snake.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\snakes\MarsSnake.cpp">
       <Filter>source</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\snakes\Snake.cpp">
+    <ClCompile Include="..\Classes\snakes\ScoreAndTimePanel.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StartMenu.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Tools.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AllPassScene.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

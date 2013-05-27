@@ -8,7 +8,12 @@
 
 class MarsSnake : public SnakeBase {
 
+private:
+	CCParticleSystemQuad *effect;
 public:
+
+	CCParticleSystemQuad *getEffect(){return this->effect;}
+	void setEffect(CCParticleSystemQuad * e){this->effect = e;}
 	static MarsSnake* create();
 
 	bool init();
@@ -24,6 +29,8 @@ public:
 	const CCPoint getNextLocation();
 
 	SnakeNode* addTail();
+
+	void move();
 
 private:
 	bool canGoToNext(DIR, const Snake*, const Map*);

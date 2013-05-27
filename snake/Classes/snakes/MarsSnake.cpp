@@ -27,6 +27,12 @@ bool MarsSnake::init() {
 	for(int i = 1; i < INITLENGTH; ++i)
 		snakeNodeList[this->len-i] = SnakeNode::marsCreate(ccp(23, 15-i), false);
 	snakeNodeList[0] = SnakeNode::marsCreate(ccp(23, 15-INITLENGTH), true);
+	
+	//this->setEffect( CCParticleSun::create());
+	//CCTexture2D * myTexture =  CCTextureCache::sharedTextureCache()->addImage("img/fire.png"); 
+	//this->getEffect()->setTexture(myTexture);
+	//this->getEffect()->setPosition(snakeNodeList[0]->getSprite()->getPosition());
+	//this->getEffect()->setScale(0.7f);
 	setDirection(LEFT);
 	return true;
 }
@@ -97,4 +103,10 @@ const CCPoint MarsSnake::getNextLocation() {
 	else if(LEFT == this->direction)	--fx;
 	else if(RIGHT == this->direction)	++fx;
 	return CCPoint(fx, fy);
+}
+
+void MarsSnake::move()
+{
+	SnakeBase::move();
+	//this->getEffect()->runAction(CCMoveTo::create(0.048f,snakeNodeList[0]->getSprite()->getPosition()));
 }
